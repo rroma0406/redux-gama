@@ -24,12 +24,12 @@ const Home: React.FC = () => {
 			<div>
 				<h1>Hello!</h1>
 				{users.map(user => (
-						<div key={user.id}>
-							<article>
-								<p>{user.name} {user.email} {user.age}</p>
-								<button onClick={() => handleAddUsers(user)}>Adicionar</button>
-							</article>
-						</div>
+					<div key={user.id}>
+						<article>
+							<p>{user.name} {user.email} {user.age}</p>
+							<button onClick={() => handleAddUsers(user)}>Adicionar</button>
+						</article>
+					</div>
 				))}
 			</div>
 	)

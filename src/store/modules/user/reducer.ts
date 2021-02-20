@@ -2,28 +2,28 @@ import {IState, IUser} from './types';
 import {Reducer} from 'redux';
 
 const INITIAL_STATE: IState = {
-	users: []
+    users: []
 }
 
 const allUsers: Reducer<IState | any> = (state = INITIAL_STATE, action) => {
-	switch (action.type) {
+    switch (action.type) {
 
-		case 'ADD_USER': {
-			const {user} = action.payload;
-			return {
-				...state,
-				users: [
-						...state.users, user
-				]
-			}
-		}
+        case 'ADD_USER': {
+            const {user} = action.payload;
+            return {
+                ...state,
+                users: [
+                    ...state.users, user
+                ]
+            }
+        }
 
-		default: {
-			return state
-		}
+        default: {
+            return state
+        }
 
 
-	}
+    }
 }
 
 export default allUsers

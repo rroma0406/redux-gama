@@ -1,10 +1,10 @@
 export interface IUser {
-	id: number,
-	name: string,
-	email: string,
-	age: number
+    id: number,
+    name: string,
+    email: string,
+    age: number
 }
 
-export  interface IState {
-	users: IUser[]
+export interface IState {
+    users: IUser[]
 }
